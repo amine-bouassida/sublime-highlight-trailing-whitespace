@@ -16,8 +16,7 @@ def highlight_whitespace(view):
 						regions.remove(region)
 						break
 
-			view.add_regions('HighlightTrailingWhitespace', regions,
-				'invalid', '', sublime.DRAW_EMPTY | sublime.DRAW_NO_FILL | sublime.HIDE_ON_MINIMAP)
+			view.add_regions('HighlightTrailingWhitespace', regions, 'invalid', '', sublime.DRAW_EMPTY | sublime.HIDE_ON_MINIMAP)
 		else:
 			view.erase_regions('HighlightTrailingWhitespace')
 
